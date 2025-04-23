@@ -1,215 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/*css*/
 body {
-    background-color: aquamarine;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: 2vh 5vw;
+   background-color: aquamarine;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1rem;
+   margin: 2vh 5vw;
 }
+
 
 title {
-    color: black;
+   color: black;
 }
+
 
 .meeting {
-    color: rgb(200, 40, 8);
-    border-bottom: 2px solid gray;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 1rem;
+   color: rgb(200, 40, 8);
+   border-bottom: 2px solid gray;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   padding: 1rem;
 }
+
 
 .attendance {
-    color: #F28282;
+   color: #F28282;
 }
+
 
 .agenda {
-    color: hsla(210, 50%, 40%, 0.9);
+   color: hsla(210, 50%, 40%, 0.9);
 }
+
 
 .weekReview {
-    color: color-mix(in lab, red 70%, blue 30%);
+   color: color-mix(in srgb, red 70%, blue 30%);
+
+
 }
+
 
 .upcoming {
-    color: var(--brand-color, #cc33aa);
+   color: var(--brand-color, #cc33aa);
+}
+/*boarder*/
+* {
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
 
 h1 {
-    color: darkblue;
-    text-align: center;
-    font-size: 5vw;
+   color: darkblue;
+   text-align: center;
+   font-size: 5vw;
 }
+
 
 #comment {
-    background-color: lightyellow;
-    font-style: italic;
+   background-color: lightyellow;
+   font-style: italic;
+}
+/*get text*/
+input[type="text"] {
+   border: 2px solid green;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
-input[type="text"] {
-    border: 2px solid green;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 p:hover {
-    background-color: #f0f0f0;
+   background-color: #f0f0f0;
 }
+
 
 h2, ul {
-    color: darkgreen;
+   color: darkgreen;
 }
+
 
 fieldset p {
-    font-weight: bold;
+   font-weight: bold;
+   border: 2px dashed teal;
+   padding: 10px;
 }
+
 
 ul > li {
-    margin-left: 20px;
+   margin-left: 20px;
 }
+
 
 h2 ~ p {
-    font-size: 14px;
-    color: slategray;
+   font-size: 14px;
+   color: slategray;
 }
+
 
 p + ul {
-    background-color: #fafafa;
-    padding: 5px;
+   background-color: #fafafa;
+   padding: 5px;
 }
+
 
 p.attendance {
-    color: red;
-    font-weight: bold;
+   color: red;
+   font-weight: bold;
 }
 
-form:has(textarea) {
-    border: 2px dashed teal;
-    padding: 10px;
-}
 
+
+
+/*cahnge form colors*/
 form {
-    & input[type="radio"] {
-        accent-color: orange;
-    }
+    input[type="radio"] {
+       accent-color: orange;
+   }
 
-    & select {
-        background-color: #f3f3f3;
-    }
+
+   & select {
+       background-color: #f3f3f3;
+   }
 }
+
 
 h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
+
 ul {
-    margin: 10px 20px 10px 20px;
-    padding: 10px 15px;
+   margin: 10px 20px 10px 20px;
+   padding: 10px 15px;
 }
+
 
 .container {
-    width: 100%;
-    margin: auto;
+   width: 100%;
+   margin: auto;
 }
 
+
 ul {
-    padding: 10px 15px;
+   padding: 10px 15px;
 }
+
 
 .border-example {
-    border-style: solid;
-    border-color: red;
-    border-width: 3px;
-    border-radius: 5px;
+   border-style: solid;
+   border-color: red;
+   border-width: 3px;
+   border-radius: 5px;
 }
+
 
 p {
-    color: #333;
-    text-decoration: underline;
-    text-align: left;
+   color: #333;
+   text-decoration: underline;
+   text-align: left;
 }
+
 
 .hidden {
-    display: none;
+   display: none;
 }
+
 
 .container {
-    display: block;
+   display: block;
 }
+
 
 .inline-container {
-    display: inline-block;
+   display: inline-block;
 }
+
 
 div {
-    width: 50%;
-    height: 200px;
-    max-width: 800px;
-    min-width: 300px;
+   width: 50%;
+   height: 200px;
+   max-width: 800px;
+   min-width: 300px;
 }
+
 
 .fixed-position {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+   position: fixed;
+   top: 20px;
+   left: 20px;
 }
+
 
 .relative-position {
-    position: relative;
-    top: 10px;
+   position: relative;
+   top: 10px;
 }
+
 
 button:active {
-    background-color: darkgray;
+   background-color: darkgray;
+}
+h1:has(+ h2) {
+   margin: 0 0 0.25rem 0;
+ }
+.flex-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 .flex-container > div {
-    flex: 1;
-    padding: 10px;
-    margin: 5px;
+   flex: 1;
+   padding: 10px;
+   margin: 5px;
 }
+
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
 }
+
 
 .grid-container > div {
-    background-color: #f4f4f4;
-    padding: 20px;
+   background-color: #f4f4f4;
+   padding: 20px;
 }
+
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: lightblue;
-    }
+   body {
+       background-color: lightblue;
+   }
 
-    .meeting {
-        font-size: 1.5rem;
-    }
 
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 
-    h1 {
-        font-size: 3rem;
-    }
+
+   .grid-container {
+       grid-template-columns: 1fr;
+   }
+
+
+   h1 {
+       font-size: 3rem;
+   }
 }
+
+
+
+
 
