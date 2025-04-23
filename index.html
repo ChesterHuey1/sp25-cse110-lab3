@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chester Meeting minutes</title>
+    <title>Chester Meeting Minutes</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Chester Meeting Minutes</h1>
+    <h1 class="meeting">Chester Meeting Minutes</h1>
+
     <h2>Brainstorming session</h2>
     <p>4/13/2025</p>
-    <p>Attendance list</p>
+
+    <p class="attendance">Attendance list</p>
     <ul>
       <li>Chester</li>
       <li>Kenny</li>
       <li>Luke</li>
     </ul>
-    <p>Agenda</p>
+
+    <p class="agenda">Agenda</p>
     <ul>
       <li>Competitors</li>
       <li>Challengers</li>
       <li>Conclusion</li>
     </ul>
-    <p>Work from last week</p>
+
+    <p class="weekReview">Work from last week</p>
     <ul>
       <li>Market state</li>
       <li>Food</li>
       <li>Branding</li>
     </ul>
-    <p>Upcoming events</p>
+
+    <p class="upcoming">Upcoming events</p>
     <ul>
       <li>Stake holder meeting</li>
       <li>Client calls</li>
       <li>Mixer event</li>
     </ul>
+
     <p>Comments/Questions</p>
     <ul>
       <li>When does package arrive</li>
       <li>When is our bonus</li>
     </ul>
+
+    <p id="comment">This is a special comment with ID styling.</p>
+
     <p>Projective Growth</p>
-    <img alt = " Doesn't work" src="https://www.graphicsfuel.com/wp-content/uploads/2011/07/business-growth-graph.jpg">
+    <img alt="Doesn't work" src="https://www.graphicsfuel.com/wp-content/uploads/2011/07/business-growth-graph.jpg">
+
     <h2>Audio Recording of the Meeting</h2>
     <audio controls>
       <source src="131385__musicmasta1__carstartskidcrash.mp3" type="audio/mpeg">
     </audio>
+
     <video width="640" height="360" controls>
       <source src="12002065_640_360_30fps.mp4" type="video/mp4">
     </video>
@@ -50,19 +62,19 @@
     <form>
       <fieldset>
         <p>Name:</p>
-        <input>
+        <input type="text" placeholder="Your name">
 
         <p>Training Start Date:</p>
-        <input>
+        <input type="date">
 
         <p>Starter Pokémon:</p>
-        <input> Charmander<br>
-        <input> Squirtle<br>
-        <input> Bulbasaur<br>
+        <input type="radio" name="starter"> Charmander<br>
+        <input type="radio" name="starter"> Squirtle<br>
+        <input type="radio" name="starter"> Bulbasaur<br>
 
         <p>Favorite Type:</p>
-        <input>
-        <datalist>
+        <input list="types">
+        <datalist id="types">
           <option>Fire</option>
           <option>Water</option>
           <option>Electric</option>
@@ -78,15 +90,14 @@
         </select>
 
         <p>Available Days:</p>
-        <input> Monday<br>
-        <input> Wednesday<br>
-        <input> Friday<br>
+        <input type="checkbox"> Monday<br>
+        <input type="checkbox"> Wednesday<br>
+        <input type="checkbox"> Friday<br>
 
         <p>Additional Comments:</p>
         <textarea rows="4" cols="40"></textarea>
 
-       
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </fieldset>
     </form>
   </body>
