@@ -1,215 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    background-color: aquamarine;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: 2vh 5vw;
-}
-
-title {
-    color: black;
-}
-
-.meeting {
-    color: rgb(200, 40, 8);
-    border-bottom: 2px solid gray;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 1rem;
-}
-
-.attendance {
-    color: #F28282;
-}
-
-.agenda {
-    color: hsla(210, 50%, 40%, 0.9);
-}
-
-.weekReview {
-    color: color-mix(in lab, red 70%, blue 30%);
-}
-
-.upcoming {
-    color: var(--brand-color, #cc33aa);
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-    color: darkblue;
-    text-align: center;
-    font-size: 5vw;
-}
-
 #comment {
     background-color: lightyellow;
     font-style: italic;
-}
-
-input[type="text"] {
+ }
+ /*get text*/
+ input[type="text"] {
     border: 2px solid green;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-p:hover {
+ }
+ 
+ 
+ p:hover {
     background-color: #f0f0f0;
-}
-
-h2, ul {
+ }
+ 
+ 
+ h2, ul {
     color: darkgreen;
-}
-
-fieldset p {
+ }
+ 
+ 
+ fieldset p {
     font-weight: bold;
-}
-
-ul > li {
-    margin-left: 20px;
-}
-
-h2 ~ p {
-    font-size: 14px;
-    color: slategray;
-}
-
-p + ul {
-    background-color: #fafafa;
-    padding: 5px;
-}
-
-p.attendance {
-    color: red;
-    font-weight: bold;
-}
-
-form:has(textarea) {
     border: 2px dashed teal;
     padding: 10px;
-}
-
-form {
-    & input[type="radio"] {
+ }
+ 
+ 
+ ul > li {
+    margin-left: 20px;
+ }
+ 
+ 
+ h2 ~ p {
+    font-size: 14px;
+    color: slategray;
+ }
+ 
+ 
+ p + ul {
+    background-color: #fafafa;
+    padding: 5px;
+ }
+ 
+ 
+ p.attendance {
+    color: red;
+    font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ /*cahnge form colors*/
+ form {
+     input[type="radio"] {
         accent-color: orange;
     }
-
+ 
+ 
     & select {
         background-color: #f3f3f3;
     }
-}
-
-h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-ul {
-    margin: 10px 20px 10px 20px;
-    padding: 10px 15px;
-}
-
-.container {
-    width: 100%;
-    margin: auto;
-}
-
-ul {
-    padding: 10px 15px;
-}
-
-.border-example {
-    border-style: solid;
-    border-color: red;
-    border-width: 3px;
-    border-radius: 5px;
-}
-
-p {
-    color: #333;
-    text-decoration: underline;
-    text-align: left;
-}
-
-.hidden {
-    display: none;
-}
-
-.container {
-    display: block;
-}
-
-.inline-container {
-    display: inline-block;
-}
-
-div {
-    width: 50%;
-    height: 200px;
-    max-width: 800px;
-    min-width: 300px;
-}
-
-.fixed-position {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-.relative-position {
-    position: relative;
-    top: 10px;
-}
-
-button:active {
-    background-color: darkgray;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flex-container > div {
-    flex: 1;
-    padding: 10px;
-    margin: 5px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.grid-container > div {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .meeting {
-        font-size: 1.5rem;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-}
-
+ }
+ 
+ 
+ 
